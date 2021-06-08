@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: MQ Browser
+
+server:
+  port: 8084
+  context-path: /demo
+
+servers:
+  mq:
+    host: 199.230.13.41
+    port: 1414
+    queue-manager: QUEUE.MANAGER
+    channel: CONNECTION.CHANNEL
+    queue: MYQUE.NAME
+    timeout: 2000
+
+browse:
+  action:
+    manager: "-m"
+    host: "-h"
+    port: "-p"
+    channel: "-c"
+    user: "-u"
+    password: "-x"
+    mqusername: admin
+    userpassword: admin
+
+
+
+
+
+
